@@ -1,5 +1,6 @@
-Static
-======
+Next
+----
+TODO
 
 Nuxt
 ----
@@ -53,8 +54,12 @@ Req/Bytes counts sampled once per second.
 
 97k requests in 30.03s, 144 MB read
 
-Solidstart
-----------
+React Router
+------------
+TODO
+
+Solid Start Solid Router
+------------------------
 Running 15s warmup @ http://localhost:3000/
 5 connections with 10 pipelining factor
 
@@ -104,6 +109,10 @@ Req/Bytes counts sampled once per second.
 # of samples: 30
 
 560 requests in 30.04s, 196 kB read
+
+Solid Start Tanstack Router
+---------------------------
+TODO
 
 Sveltekit
 ---------
@@ -156,6 +165,9 @@ Req/Bytes counts sampled once per second.
 # of samples: 30
 
 253k requests in 30.01s, 1.04 GB read
+
+Tanstack Start React
+--------------------
 
 Tanstack Start Solid
 --------------------
