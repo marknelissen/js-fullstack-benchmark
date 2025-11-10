@@ -57,6 +57,7 @@ Req/Bytes counts sampled once per second.
 TODO
 multi component page
 prerendered
+api call
 
 React Router
 ------------
@@ -117,6 +118,7 @@ Req/Bytes counts sampled once per second.
 TODO
 multi component page
 prerendered
+api call
 
 Solid Start Tanstack Router
 ---------------------------
@@ -177,6 +179,7 @@ Req/Bytes counts sampled once per second.
 TODO
 multi component page
 prerendered
+api call
 
 Tanstack Start React
 --------------------
@@ -237,3 +240,4 @@ Req/Bytes counts sampled once per second.
 TODO
 multi component page
 prerendered
+api call
