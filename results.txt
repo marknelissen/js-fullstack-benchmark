@@ -157,8 +157,8 @@ Req/Bytes counts sampled once per second.
 
 253k requests in 30.01s, 1.04 GB read
 
-Tanstack Start
---------------
+Tanstack Start Solid
+--------------------
 Running 15s warmup @ http://localhost:3000/
 5 connections with 10 pipelining factor
 
