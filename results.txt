@@ -102,11 +102,6 @@ Req/Bytes counts sampled once per second.
 
 97k requests in 30.03s, 144 MB read
 
-TODO
-multi component page
-prerendered
-api call
-
 React Router
 ------------
 Running 15s warmup @ http://localhost:3000/
@@ -211,11 +206,6 @@ Req/Bytes counts sampled once per second.
 
 560 requests in 30.04s, 196 kB read
 
-TODO
-multi component page
-prerendered
-api call
-
 Solid Start Tanstack Router
 ---------------------------
 Running 15s warmup @ http://localhost:3000/
@@ -319,11 +309,6 @@ Req/Bytes counts sampled once per second.
 # of samples: 30
 
 253k requests in 30.01s, 1.04 GB read
-
-TODO
-multi component page
-prerendered
-api call
 
 Tanstack Start React
 --------------------
