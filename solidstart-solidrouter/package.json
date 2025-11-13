@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "NODE_ENV=production node .output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
     "version": "vinxi version"
   },
   "dependencies": {
