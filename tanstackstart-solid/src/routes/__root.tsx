@@ -22,10 +22,10 @@ function RootComponent() {
   return (
     <html>
       <head>
+        <HeadContent />
         <HydrationScript />
       </head>
       <body>
-        <HeadContent />
         <Suspense>
           <Outlet />
           <TanStackRouterDevtools />
