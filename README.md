@@ -15,4 +15,6 @@
 
 Macbook Pro M1 Pro 32GB RAM
 
+macOS Tahoe 26.1
+
 Node 22.15.1
