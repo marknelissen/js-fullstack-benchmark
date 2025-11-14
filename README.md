@@ -10,3 +10,9 @@
 | React Router                | 3k             | 3k              |
 | Solid Start Solid Router    | 2              | 2               |
 | Solid Start Tanstack Router | 2              | 2               |
+
+# Environment
+
+Macbook Pro M1 Pro 32GB RAM
+
+Node 22.15.1
