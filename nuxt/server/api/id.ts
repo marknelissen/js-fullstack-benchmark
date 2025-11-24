@@ -1,3 +1,3 @@
 export default defineEventHandler(() => {
-  return { id: crypto.randomUUID() };
+  return crypto.randomUUID();
 });

@@ -4,5 +4,5 @@ const { data } = await useFetch("/api/id");
 
 <template>
   <h1>Hello Nuxt 3!</h1>
-  <p>{{ new Date().toString() }} - {{ data?.id }}</p>
+  <p>{{ new Date().toString() }} - {{ data }}</p>
 </template>

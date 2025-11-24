@@ -23,9 +23,13 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
-    "@types/node": "^22.19.0",
+    "@types/node": "^24.10.1",
     "typescript": "^5.7.2",
     "vite": "^7.1.7",
     "vite-plugin-solid": "^2.11.10"
+  },
+  "volta": {
+    "node": "24.11.1",
+    "npm": "11.6.3"
   }
 }

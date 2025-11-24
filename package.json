@@ -13,5 +13,9 @@
   "type": "commonjs",
   "dependencies": {
     "autocannon": "^8.0.0"
+  },
+  "volta": {
+    "node": "24.11.1",
+    "npm": "11.6.3"
   }
 }

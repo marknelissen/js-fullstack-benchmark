@@ -17,10 +17,14 @@
     "@sveltejs/adapter-node": "^5.4.0",
     "@sveltejs/kit": "^2.47.1",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
-    "@types/node": "^22.19.0",
+    "@types/node": "^24.10.1",
     "svelte": "^5.41.0",
     "svelte-check": "^4.3.3",
     "typescript": "^5.9.3",
     "vite": "^7.1.10"
+  },
+  "volta": {
+    "node": "24.11.1",
+    "npm": "11.6.3"
   }
 }
