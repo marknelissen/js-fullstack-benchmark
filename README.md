@@ -2,12 +2,12 @@
 
 | Framework                   | Static content | Dynamic content |
 | --------------------------- | -------------- | --------------- |
-| Sveltekit                   | 11k            | 11k             |
-| Next                        | 7k             | 7k              |
-| Tanstack Start React        | 6k             | 6k              |
-| Tanstack Start Solid        | 5k             | 5k              |
-| React Router                | 5k             | 4k              |
-| Nuxt                        | 5k             | 3k              |
+| Sveltekit                   | 12k            | 12k             |
+| Next                        | 8k             | 8k              |
+| Tanstack Start React        | 7k             | 6k              |
+| Tanstack Start Solid        | 6k             | 5k              |
+| React Router                | 5k             | 5k              |
+| Nuxt                        | 5k             | 4k              |
 | Solid Start Solid Router    | 2              | 2               |
 | Solid Start Tanstack Router | 2              | 2               |
 
