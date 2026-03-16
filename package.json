@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "autocannon -W [ -c 5 -d 15 ] -c 50 -d 30 -p 10 -t 60 http://localhost:3000/",
-    "test:dynamic": "autocannon -W [ -c 5 -d 15 ] -c 50 -d 30 -p 10 -t 60 http://localhost:3000/dynamic"
+    "test": "autocannon -W [ -c 5 -d 15 ] -c 50 -d 30 -p 10 -t 60 http://127.0.0.1:3000/",
+    "test:dynamic": "autocannon -W [ -c 5 -d 15 ] -c 50 -d 30 -p 10 -t 60 http://127.0.0.1:3000/dynamic"
   },
   "keywords": [],
   "author": "",
