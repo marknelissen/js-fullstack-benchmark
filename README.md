@@ -2,20 +2,20 @@
 
 | Framework                   | Static content | Dynamic content |
 | --------------------------- | -------------- | --------------- |
-| Sveltekit                   | 10.6k          | 10.3k           |
-| Next                        | 7.3k           | 6.9k            |
-| Tanstack Start React        | 6.7k           | 5.4k            |
-| Tanstack Start Solid        | 5.1k           | 4.7k            |
-| React Router                | 4.4k           | 4.1k            |
-| Nuxt                        | 4.8k           | 3.6k            |
-| Solid Start Solid Router    | 1.8            | 2.0             |
-| Solid Start Tanstack Router | 1.8            | 1.9             |
+| Sveltekit                   | 12.1k          | 12.2k           |
+| Tanstack Start React        | 13.3k          | 10.1k           |
+| Next                        | 8.2k           | 7.7k            |
+| Tanstack Start Solid        | 8.2k           | 7.0k            |
+| React Router                | 5.0k           | 4.7k            |
+| Nuxt                        | 5.8k           | 3.8k            |
+| Solid Start Solid Router    | 1.7            | 1.7             |
+| Solid Start Tanstack Router | 1.7            | 1.7             |
 
 # Environment
 
 Macbook Pro M1 Pro 32GB RAM
 
-macOS Tahoe 26.2
+macOS Tahoe 26.3.1
 
 Node 24.12.0
 
