@@ -4,6 +4,6 @@ import { defineConfig } from "vite";
 
 export default defineConfig(() => {
   return {
-    plugins: [solidStart({}), nitroV2Plugin()],
+    plugins: [solidStart(), nitroV2Plugin()],
   };
 });

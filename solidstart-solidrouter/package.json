@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "start": "vite preview"
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
@@ -18,7 +18,7 @@
     "node": ">=22"
   },
   "volta": {
-    "node": "24.12.0",
-    "npm": "11.7.0"
+    "node": "24.14.0",
+    "npm": "11.12.0"
   }
 }
