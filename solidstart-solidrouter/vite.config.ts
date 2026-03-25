@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig(() => {
   return {
+    preview: {
+      port: 3000,
+    },
     plugins: [solidStart(), nitroV2Plugin()],
   };
 });
