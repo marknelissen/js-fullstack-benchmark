@@ -11,7 +11,7 @@ export const Route = createFileRoute("/dynamic")({
   component: App,
 });
 
-export default function App() {
+function App() {
   const data = Route.useLoaderData();
   return (
     <main>

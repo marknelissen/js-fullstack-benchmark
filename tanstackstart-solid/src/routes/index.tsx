@@ -4,7 +4,7 @@ export const Route = createFileRoute("/")({
   component: App,
 });
 
-export default function App() {
+function App() {
   return (
     <main>
       <h1>Hello Tanstack Start!</h1>
