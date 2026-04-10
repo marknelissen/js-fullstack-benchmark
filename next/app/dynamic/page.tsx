@@ -1,6 +1,8 @@
+import { connection } from "next/server";
 import { getData } from "../lib/data";
 
 export default async function Dynamic() {
+  await connection();
   const data = await getData();
   return (
     <main>
