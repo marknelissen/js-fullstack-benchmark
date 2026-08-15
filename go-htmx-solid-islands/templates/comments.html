@@ -1,0 +1,22 @@
+{{define "comments.html"}}
+<!--
+  This whole fragment is swapped in by htmx. It contains a Solid island (CommentForm)
+  which must be mounted after the swap — see htmx:afterSwap listener in main.tsx.
+  The fragment container itself listens for the "comment-added" event (fired via
+  HX-Trigger response header when the Solid form posts a new comment) and reloads itself.
+-->
+<div hx-get="/posts/{{.PostID}}/comments"
+     hx-trigger="comment-added from:body"
+     hx-target="this"
+     hx-swap="innerHTML">
+  <ul>
+    {{range .Comments}}
+    <li><strong>{{.Author}}:</strong> {{.Body}}</li>
+    {{else}}
+    <li><em>No comments yet.</em></li>
+    {{end}}
+  </ul>
+
+  <div data-island="CommentForm" data-props='{"postId":{{.PostID}}}'></div>
+</div>
+{{end}}
