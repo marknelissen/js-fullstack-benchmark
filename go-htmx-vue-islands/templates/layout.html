@@ -1,0 +1,30 @@
+{{define "layout.html"}}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>go + htmx + Vue islands</title>
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+</head>
+<body>
+  <h1>Posts</h1>
+
+  {{range .Posts}}
+  <article style="border:1px solid #ccc; padding:1rem; margin-bottom:1rem;">
+    <h2>{{.Title}}</h2>
+
+    <!-- Vue island: mounted client-side, talks to the Go API directly via fetch -->
+    <div data-island="LikeButton" data-props='{"postId":{{.ID}},"initialLikes":{{.Likes}}}'></div>
+
+    <!-- htmx: server-rendered fragment swap, no Vue involved here -->
+    <button hx-get="/posts/{{.ID}}/comments" hx-target="#comments-{{.ID}}" hx-swap="innerHTML">
+      Load comments
+    </button>
+    <div id="comments-{{.ID}}"></div>
+  </article>
+  {{end}}
+
+  <script type="module" src="/static/islands/main.js"></script>
+</body>
+</html>
+{{end}}
