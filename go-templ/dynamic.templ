@@ -1,0 +1,8 @@
+package main
+
+import "time"
+
+templ dynamic(id string) {
+    <h1>Hello Templ!</h1>  
+    <p>{ time.Now().Format(time.RFC3339) } - { id }</p>
+}
