@@ -13,6 +13,11 @@ func main() {
 	runtime.GOMAXPROCS(1)
 	fmt.Printf("GOMAXPROCS: %d\n", runtime.GOMAXPROCS(0))
 	http.Handle("/", templ.Handler(hello()))
+	http.HandleFunc("/api/id", func(w http.ResponseWriter, r *http.Request) {
+		id := uuid.New().String()
+		w.Header().Set("Content-Type", "application/json")
+		fmt.Fprintf(w, `{"id": "%s"}`, id)
+	})
 	http.HandleFunc("/dynamic", func(w http.ResponseWriter, r *http.Request) {
 		dynamic(uuid.New().String()).Render(r.Context(), w)
 	})
