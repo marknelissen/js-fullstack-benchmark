@@ -1,6 +1,8 @@
 package main
 
 import (
+	"compress/gzip"
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"runtime"
@@ -9,14 +11,27 @@ import (
 	"github.com/google/uuid"
 )
 
+type idResponse struct {
+	Id string `json:"id"`
+}
+
 func main() {
 	runtime.GOMAXPROCS(1)
 	fmt.Printf("GOMAXPROCS: %d\n", runtime.GOMAXPROCS(0))
 	http.Handle("/", templ.Handler(hello()))
 	http.HandleFunc("/api/id", func(w http.ResponseWriter, r *http.Request) {
 		id := uuid.New().String()
+		resp := idResponse{Id: id}
+		jsonData, err := json.Marshal(resp)
+		if err != nil {
+			http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
+			return
+		}
 		w.Header().Set("Content-Type", "application/json")
-		fmt.Fprintf(w, `{"id": "%s"}`, id)
+		w.Header().Set("Content-Encoding", "gzip")
+		gz := gzip.NewWriter(w)
+		defer gz.Close()
+		gz.Write(jsonData)
 	})
 	http.HandleFunc("/dynamic", func(w http.ResponseWriter, r *http.Request) {
 		dynamic(uuid.New().String()).Render(r.Context(), w)
