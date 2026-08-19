@@ -1,9 +1,9 @@
 package main
 
 import (
-	"compress/gzip"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"runtime"
 
@@ -28,10 +28,9 @@ func main() {
 			return
 		}
 		w.Header().Set("Content-Type", "application/json")
-		w.Header().Set("Content-Encoding", "gzip")
-		gz := gzip.NewWriter(w)
-		defer gz.Close()
-		gz.Write(jsonData)
+		if _, err := w.Write(jsonData); err != nil {
+			log.Println("write error:", err)
+		}
 	})
 	http.HandleFunc("/dynamic", func(w http.ResponseWriter, r *http.Request) {
 		dynamic(uuid.New().String()).Render(r.Context(), w)
